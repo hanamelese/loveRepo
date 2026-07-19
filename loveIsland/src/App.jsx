@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
 import diaryBg from './assets/diary2.jpg';
-import lover1 from './assets/lover1.jpg';
-import lover2 from './assets/lover2.jpg';
+import lover1 from './assets/lover1.png';
+import lover2 from './assets/lover2.png';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 function App() {
   const navigate = useNavigate();
   return (
+    
     <div className="main-container" >
       
-      {/* Scattered Handwriting on the Board */}
+        
       <div className="handwriting handwriting-1">"Memories are timeless..."</div>
       <div className="handwriting handwriting-2">"Forever yours."</div>
 
@@ -29,7 +31,7 @@ function App() {
         {/* Aesthetic Buttons on the Right */}
         <div className="button-group">
             <button className="aesthetic-btn" onClick={() => navigate('/memories')}>Our Memories</button>
-            <button className="aesthetic-btn">Push Me</button>
+            <button className="aesthetic-btn" onClick={()=> navigate('/love-dave')}>Push Me</button>
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ import img7 from './assets/photos/image7.jpg';
 import img8 from './assets/photos/image8.jpg';  
 import img9 from './assets/photos/image9.jpg';
 import img10 from './assets/photos/image10.jpg';
+import Header from './Header';
 
 
 const photoList = [img1, img2, img3,img4, img5, img6, img7, img8, img9, img10];
@@ -37,6 +38,7 @@ const MemoriesPage = () => {
 
   return (
     <div className="memories-container">
+      <Header />
       <div className="tabs">
         <h2 onClick={() => handleTabChange('photos')} className={activeTab === 'photos' ? 'active' : ''}>Photos</h2>
         <h2 onClick={() => handleTabChange('videos')} className={activeTab === 'videos' ? 'active' : ''}>Videos</h2>
