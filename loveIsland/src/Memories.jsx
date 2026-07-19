@@ -70,6 +70,10 @@ const MemoriesPage = () => {
     />
   ))
 )}
+<div className="handwritings handwriting-3">"I am happy to have you 😍"</div>
+      <div className="handwritings handwriting-4">"Deep kisses💋💋"</div>
+
+
         </div>
       </div>
     </div>

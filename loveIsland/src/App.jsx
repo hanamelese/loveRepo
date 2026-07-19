@@ -19,7 +19,6 @@ function App() {
       
       <div className="notebook-overlay">
         
-        {/* The Two Photos */}
         <div className="polaroid photo-1">
             <div className="polaroid-inner" style={{ backgroundImage: `url(${lover1})` }}></div>
             
@@ -28,7 +27,6 @@ function App() {
             <div className="polaroid-inner" style={{ backgroundImage: `url(${lover2})` }}></div>
         </div>
 
-        {/* Aesthetic Buttons on the Right */}
         <div className="button-group">
             <button className="aesthetic-btn" onClick={() => navigate('/memories')}>Our Memories</button>
             <button className="aesthetic-btn" onClick={()=> navigate('/love-dave')}>Push Me</button>
