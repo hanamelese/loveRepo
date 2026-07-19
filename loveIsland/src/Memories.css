@@ -1,0 +1,83 @@
+.memories-container {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c140e;
+    /* Matches your landing page background */
+    color: #e8dcc4;
+    padding: 40px 20px;
+    font-family: 'Playfair Display', serif;
+    background-image: url('./assets/bg2.jpg');
+}
+
+.tabs {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.tabs h2 {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tabs h2.active {
+    opacity: 1;
+    border-bottom: 2px solid #a83232;
+    transform: scale(1.1);
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 900px;
+    height: 70vh;
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #a83232 #1c140e;
+}
+
+/* Scrollbar styles for modern browsers */
+.content-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-wrapper::-webkit-scrollbar-thumb {
+    background: #a83232;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.card {
+    height: 270px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(232, 220, 196, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #a83232;
+}
+
+.video-card {
+    border-left: 4px solid #a83232;
+    background: linear-gradient(135deg, rgba(168, 50, 50, 0.1), transparent);
+}
